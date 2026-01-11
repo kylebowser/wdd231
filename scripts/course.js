@@ -80,7 +80,7 @@ const courses = [
 
 let courseList = document.getElementById("courseList");
 let courseCounter = document.querySelector("#courseCount");
-let courseCount = 0;
+
 
 for (let i = 0; i < courses.length; i++) {
     if (courses[i].completed === true) {
@@ -88,10 +88,14 @@ for (let i = 0; i < courses.length; i++) {
     }
     else {
         courseList.innerHTML += `<p class="incomplete">${courses[i].subject} ${courses[i].number}</p>`;
-        courseCount
     }
-    courseCount++;
 }
+
+const creditCount = courses.reduce((acc, course) => {
+    { acc += course.credits; } return acc;
+}, 0);
+
+courseCounter.innerHTML += `The total number of credits listed below is ${creditCount}`;
 
 const all = document.querySelector('#all');
 const wdd = document.querySelector('#wdd');
@@ -101,26 +105,30 @@ const cse = document.querySelector('#cse');
 all.addEventListener('click', () => {
     courseList.innerHTML = '';
     courseCounter.innerHTML = '';
-    courseCount = 0;
+
 
     for (let i = 0; i < courses.length; i++) {
         if (courses[i].completed === true) {
             courseList.innerHTML += `<p class="complete">✅ ${courses[i].subject} ${courses[i].number}</p>`;
-            courseCount++;
+
         }
         else {
             courseList.innerHTML += `<p class="incomplete">${courses[i].subject} ${courses[i].number}</p>`;
-            courseCount++;
+
         }
 
     }
-    courseCounter.innerHTML += `The total number of courses listed below is ${courseCount}`;
+    const creditCount = courses.reduce((acc, course) => {
+        { acc += course.credits; } return acc;
+    }, 0);
+
+    courseCounter.innerHTML += `The total number of credits listed below is ${creditCount}`;
 });
 
 wdd.addEventListener('click', () => {
     courseList.innerHTML = '';
     courseCounter.innerHTML = '';
-    courseCount = 0;
+
 
     for (let i = 0; i < courses.length; i++) {
         if (courses[i].subject === 'WDD') {
@@ -135,28 +143,34 @@ wdd.addEventListener('click', () => {
 
         }
     }
-    courseCounter.innerHTML += `The total number of courses listed below is ${courseCount}`;
+    const creditCount = courses.reduce((acc, course) => {
+        if (course.subject === 'WDD') { acc += course.credits; } return acc;
+    }, 0);
+
+    courseCounter.innerHTML += `The total number of credits listed below is ${creditCount}`;
 });
 
 cse.addEventListener('click', () => {
     courseList.innerHTML = '';
     courseCounter.innerHTML = '';
-    courseCount = 0;
+
 
     for (let i = 0; i < courses.length; i++) {
         if (courses[i].subject === 'CSE') {
             if (courses[i].completed === true) {
                 courseList.innerHTML += `<p class="complete">✅ ${courses[i].subject} ${courses[i].number}</p>`;
-                courseCount++;
+
             }
             else {
                 courseList.innerHTML += `<p class="incomplete">${courses[i].subject} ${courses[i].number}</p>`;
-                courseCount++;
+
             }
         }
     }
 
-    courseCounter.innerHTML += `The total number of courses listed below is ${courseCount}`;
-});
+    const creditCount = courses.reduce((acc, course) => {
+        if (course.subject === 'CSE') { acc += course.credits; } return acc;
+    }, 0);
 
-document.querySelector("#courseCount").innerHTML += courseCount;
+    courseCounter.innerHTML += `The total number of credits listed below is ${creditCount}`;
+});
