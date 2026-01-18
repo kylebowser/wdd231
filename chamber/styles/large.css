@@ -1,11 +1,5 @@
 @media only screen and (min-width: 40em) {
 
-    body {
-        display: grid;
-        height: 100vh;
-        grid-template-rows: auto 1fr auto;
-        font-family: 'Roboto', sans-serif;
-    }
 
     header {
         background: gray;
@@ -66,63 +60,64 @@
         text-decoration: underline;
     }
 
-
-    main {
-        background: white;
+    .grid {
         display: grid;
-        grid-template-columns: 1fr 300px;
-        gap: 1rem;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 5px;
+        align-items: center;
+        background-color: white;
+
+        section {
+            text-align: center;
+        }
+
+        &>* {
+            margin: 0 1rem;
+        }
+
+        img {
+            border: 1px solid #fff;
+            box-shadow: 0 0 1rem #555;
+        }
     }
 
-    h1 {
-        grid-column: 1 / -1;
-        height: 10px;
+    h3 {
+        font-size: 1.2rem;
     }
 
-    .card {
-        grid-column: 1 / 2;
-    }
-
-    .right-sidebar {
-        grid-column: 2 / 3;
-    }
-
-    #lower {
-        grid-column: 1 / -1;
-    }
-
-    #lower ul {
+    .list {
         display: flex;
-        list-style: none;
-        text-align: center;
-    }
+        flex-direction: column;
 
+        section {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            margin: 0;
+            padding: 0.25rem;
 
-    #lower a {
-        display: block;
-        text-decoration: none;
-        padding: 1rem;
-        background-color: grey;
-        border: 1px solid black;
-        border-radius: 6px;
-        margin: 10px;
-    }
+            &>* {
+                margin: 0 1rem;
+            }
 
-    #lower a::after {
-        content: " Courses";
+            h3 {
+                font-size: 1rem;
+            }
+
+            &:nth-child(even) {
+                background-color: #bbb;
+            }
+        }
     }
 
     footer {
+        display: flex;
         padding: 2rem;
         grid-column: 1 / 4;
+        justify-content: center;
     }
 
     .media-links img {
-        margin: 1rem 3rem;
+        margin: 4rem 3rem;
     }
 
-    .left-sidebar,
-    .right-sidebar {
-        padding: 1rem;
-    }
 }

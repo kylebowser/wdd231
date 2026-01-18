@@ -1,0 +1,99 @@
+.hamburger::before {
+    content: "\2630";
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+.site-title {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+}
+
+.navigation li {
+    display: none;
+}
+
+.header.show .navigation li {
+    display: block;
+    text-align: center;
+}
+
+nav a {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: larger;
+}
+
+.navigation a:hover,
+.navigation a:active {
+    color: white;
+    background-color: black;
+}
+
+.show li {
+    display: block;
+    background-color: grey;
+    color: white;
+    border: 2px solid black;
+}
+
+h2 {
+    display: block;
+    background: black;
+    color: white;
+    text-align: center;
+}
+
+
+.menu {
+    margin: 1rem auto;
+    padding: 0.5rem;
+    background-color: #333;
+    text-align: center;
+
+    button {
+        padding: 0.5rem 1rem;
+        font-weight: 700;
+    }
+}
+
+section {
+    border: 1px solid rgb(0 0 0 / 10%);
+    padding: 0.5rem;
+    background-color: #ddd;
+
+    a {
+        font-family: Arial, sans-serif;
+        font-size: 0.85rem;
+        color: navy;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+}
+
+img {
+    width: auto;
+    height: 75px;
+}
+
+footer {
+    background: lightgray;
+    color: black;
+    text-align: center;
+}
+
+/* .media-links {
+    background-color: white;
+} */
+
+.media-links img {
+    height: 50px;
+    width: auto;
+    margin: 1rem 1rem;
+}

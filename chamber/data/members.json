@@ -1,0 +1,60 @@
+{
+    "members": [
+        {
+            "name": "Ashelys",
+            "address": "111 N 1st ST",
+            "phone": "(111) 111-1111",
+            "website": "www.ashelys.com",
+            "image": "images/ashleys.webp",
+            "memberlevel": 1
+        },
+        {
+            "name": "BagelSmith",
+            "address": "222 N 2nd ST",
+            "phone": "(222) 222-2222",
+            "website": "www.bagelsmith.com",
+            "image": "images/bagelsmith.webp",
+            "memberlevel": 2
+        },
+        {
+            "name": "Golden Palace",
+            "address": "333 N 3rd ST",
+            "phone": "(333) 333-3333",
+            "website": "www.goldenpalace.com",
+            "image": "images/goldenpalace.webp",
+            "memberlevel": 2
+        },
+        {
+            "name": "Magic Flame",
+            "address": "444 N 4st ST",
+            "phone": "(444) 444-4444",
+            "website": "www.magicflame.com",
+            "image": "images/magicflame.webp",
+            "memberlevel": 1
+        },
+        {
+            "name": "Rozoa Popup",
+            "address": "555 N 5th ST",
+            "phone": "(555) 555-5555",
+            "website": "www.rozoapopup.com",
+            "image": "images/rozoapopup.webp",
+            "memberlevel": 2
+        },
+        {
+            "name": "Tasty Bird",
+            "address": "666 N 6th ST",
+            "phone": "(666) 666-6666",
+            "website": "www.tastybird.com",
+            "image": "images/tastybird.webp",
+            "memberlevel": 3
+        },
+        {
+            "name": "whiski Bar",
+            "address": "777 N 7th ST",
+            "phone": "(777) 777-7777",
+            "website": "www.whiskibar.com",
+            "image": "images/whiskibar.webp",
+            "memberlevel": 1
+        }
+    ]
+}

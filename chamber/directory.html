@@ -15,13 +15,13 @@
     <link rel="stylesheet" href="styles/large.css">
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
-    <script src="scripts/course.js" defer></script>
+    <script src="scripts/members.js" defer></script>
     <link rel="icon" href="images/favicon.ico">
 
     <meta property="og:title" content="Commerce">
     <meta property="og:description"
-        content="Home page for a Commerce Website and an intro into the helpful people you can contact there.">
-    <meta property="og:url" content="https://kylebowser.github.io/wdd231">
+        content="Directory page for a Commerce Website and an intro into the helpful people you can contact there.">
+    <meta property="og:url" content="https://kylebowser.github.io/wdd231/chamber/directory.html">
     <meta property="og:image" content="images/profile.jpg">
 </head>
 
@@ -29,7 +29,7 @@
     <header class="header">
         <div id="site-title">
             <img src="images/bank2.svg" alt="logo">
-            <span id="course-title">Commerce</span>
+            <span id="course-title">Layton Chamber of Commerce</span>
             <button id="nav-button" class="hamburger" aria-label="navigation"></button>
         </div>
         <nav class="navigation">
@@ -41,35 +41,22 @@
         </nav>
     </header>
     <main>
-        <h1>Home</h1>
-        <section class="card">
-            <h2>About Me</h2>
-            <p>
-                Hello! My name is Kyle Bowser, and I am currently a student at Brigham Young University
-                pursuing a degree in Web Design and Development. I have a passion for creating engaging
-                and user-friendly websites that provide value to users. In my free time, I enjoy hiking,
-                photography, and exploring new technologies in web development.
-            </p>
-        </section>
-        <section class="right-sidebar">
-            <h2>Student Photo</h2>
-            <img src="images/profile.jpg" alt="Profile Picture" width="120">
-        </section>
-        <section id="lower">
-            <h2>Web Certificate Course</h2>
-            <ul>
-                <li><a href="#" id="all">All</a></li>
-                <li><a href="#" id="wdd">WDD</a></li>
-                <li><a href="#" id="cse">CSE</a></li>
-            </ul>
-            <p id="courseCount"></p>
-            <div id="courseList">
+        <div class="menu">
+            <button id="grid">Grid</button>
+            <button id="list">List</button>
+        </div>
+        <section id="members"></section>
 
-            </div>
-        </section>
     </main>
 
     <footer>
+        <div id="chamInfo">
+            <p>Layton Chamber of Commerce</p>
+            <p>123 Layton Dr</p>
+            <p>Layton, Utah 84041</p>
+            <p>info@laytoncity.com</p>
+            <p>(555) 555-5555</p>
+        </div>
         <div class="media-links">
             <a href="https://linkedin.com">
                 <img src="images/linkedin.svg" alt="linkedin">
@@ -82,8 +69,12 @@
                 <img src="images/microsoft-teams.svg" alt="microsoft teams">
             </a>
         </div>
-        <p>&copy; <span id="current-year"></span> | Kyle Bowser | Utah</p>
-        <p id="lastModified"></p>
+        <div id="myInfo">
+            <p>WDD231 Class Project</p>
+            <p>Kyle Bowser</p>
+            <p>&copy; <span id="current-year"></span> Layton Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </div>
     </footer>
 </body>
 
