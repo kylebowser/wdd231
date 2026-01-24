@@ -60,7 +60,65 @@
         text-decoration: underline;
     }
 
-    .grid {
+    /* .hero {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    .hero img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .hero a {
+        position: absolute;
+        text-align: center;
+        height: 70px;
+        font-size: 55px;
+        background-color: white;
+        text-decoration: none;
+        color: black;
+        display: block;
+        text-decoration: none;
+        padding: 1rem;
+        border: 1px solid black;
+        border-radius: 6px;
+        margin: 10px;
+    } */
+
+    .layer2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-gap: 5px;
+        margin-top: 5px;
+        background-color: white;
+    }
+
+    .curevent {
+        grid-column: 1/3;
+    }
+
+    .curevent img {
+        width: 200px;
+        height: auto;
+    }
+
+
+
+    #curweather {
+        grid-column: 3/4;
+    }
+
+
+    #forecast-sec {
+        grid-column: 4/5;
+    }
+
+    .grid,
+    #sptlit {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         grid-gap: 5px;
