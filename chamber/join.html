@@ -71,19 +71,14 @@
                             Gold</label>
                     </section> -->
                     <fieldset id="membership-level">
-                        <legend>Membership Level</legend>
-
-                        <input type="radio" name="rating" id="np" value="np" required>
-                        <label for="np">Non-Profit</label>
-
-                        <input type="radio" name="rating" id="bronze" value="bronze">
-                        <label for="bronze">Bronze</label>
-
-                        <input type="radio" name="rating" id="silver" value="silver">
-                        <label for="silver">Silver</label>
-
-                        <input type="radio" name="rating" id="gold" value="gold">
-                        <label for="gold">Gold</label>
+                        <legend>Membership Level</legend> <label for="membership">Choose your membership level:</label>
+                        <select id="membership" name="membership" required>
+                            <option value="">-- Select a level --</option>
+                            <option value="np">NP Membership (Non-Profit)</option>
+                            <option value="bronze">Bronze Membership</option>
+                            <option value="silver">Silver Membership</option>
+                            <option value="gold">Gold Membership</option>
+                        </select>
                     </fieldset>
 
                     <label for="description">Buisness Description <textarea id="description"
