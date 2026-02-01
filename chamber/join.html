@@ -51,21 +51,23 @@
                             name="firstname" autocomplete="given-name" required></label>
                     <label for="lastname">Last Name <input type="text" id="lastname" title="Your last name"
                             name="lastname" autocomplete="family-name" required></label>
-                    <label for="title">Title <input type="text" id="title" title="Email Address (@ .com)" name="title"
-                            pattern="[A-Za-z\- ]{7,}"></label>
-                    <label for="email">Email <input type="email" id="email" name="email" autocomplete="email"
-                            placeholder="example@gmail.com" required></label>
+                    <label for="title">Title <input type="text" id="title" title="Title" name="title"
+                            pattern="[A-Za-z\- ]{7,}" autocomplete="organization-title"></label>
+                    <label for="email">Email <input type="email" id="email" title="Email Address (@ .com)" name="email"
+                            autocomplete="email" placeholder="example@gmail.com" required></label>
                     <label for="phone">Phone <input type="tel" id="phone" title="Phone Number (xxx-xxx-xxxx)"
-                            name="phone" autocomplete="phone" required></label>
+                            name="phone" autocomplete="tel" required></label>
                     <label for="buisnessName">Buisness Name<input type="text" id="buisnessName" title="Buisness Name"
                             name="buisnessName" autocomplete="organization" required></label>
 
                     <div>Membership Level</div>
-                    <label for="1"><input type="radio" name="rating" id="1" value="Non-Profit" required>
+                    <label for="np"><input type="radio" name="rating" id="np" value="Non-Profit" required>
                         Non-Profit</label>
-                    <label for="2"><input type="radio" name="rating" id="2" value="Bronze" required> Bronze</label>
-                    <label for="3"><input type="radio" name="rating" id="3" value="Silver" required> Silver</label>
-                    <label for="4"><input type="radio" name="rating" id="4" value="Gold" required> Gold</label>
+                    <label for="bronze"><input type="radio" name="rating" id="bronze" value="Bronze" required>
+                        Bronze</label>
+                    <label for="silver"><input type="radio" name="rating" id="silver" value="Silver" required>
+                        Silver</label>
+                    <label for="gold"><input type="radio" name="rating" id="gold" value="Gold" required> Gold</label>
 
                     <label for="description">Buisness Description <textarea id="description"
                             title="Describe Your Buisness" name="description"></textarea></label>
