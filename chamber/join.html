@@ -59,7 +59,7 @@
                             name="phone" autocomplete="tel" required></label>
                     <label for="buisnessName">Buisness Name<input type="text" id="buisnessName" title="Buisness Name"
                             name="buisnessName" autocomplete="organization" required></label>
-                    <section id="membership-level">
+                    <!-- <section id="membership-level">
                         <div>Membership Level</div>
                         <label for="np"><input type="radio" name="rating" id="np" value="np" required>
                             Non-Profit</label>
@@ -69,7 +69,22 @@
                             Silver</label>
                         <label for="gold"><input type="radio" name="rating" id="gold" value="gold" required>
                             Gold</label>
-                    </section>
+                    </section> -->
+                    <fieldset id="membership-level">
+                        <legend>Membership Level</legend>
+
+                        <input type="radio" name="rating" id="np" value="np" required>
+                        <label for="np">Non-Profit</label>
+
+                        <input type="radio" name="rating" id="bronze" value="bronze">
+                        <label for="bronze">Bronze</label>
+
+                        <input type="radio" name="rating" id="silver" value="silver">
+                        <label for="silver">Silver</label>
+
+                        <input type="radio" name="rating" id="gold" value="gold">
+                        <label for="gold">Gold</label>
+                    </fieldset>
 
                     <label for="description">Buisness Description <textarea id="description"
                             title="Describe Your Buisness" name="description"></textarea></label>
