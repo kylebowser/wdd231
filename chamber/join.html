@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 231 - Web Frontend Development 1 - Kyle Bowser - Join</title>
+    <meta name="description" content="Kyle Bowser, WDD 231 - Web Frontend Development 1, Join">
+    <meta name="author" content="Kyle Bowser">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/members.js" defer></script>
+    <script src="scripts/modals.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
+    <link rel="icon" href="images/favicon.ico">
+
+    <meta property="og:title" content="Commerce">
+    <meta property="og:description"
+        content="Join page for a Commerce Website and an intro into the helpful people you can contact there.">
+    <meta property="og:url" content="https://kylebowser.github.io/wdd231/chamber/directory.html">
+    <meta property="og:image" content="https://kylebowser.github.io/wdd231/chamber/bank2.svg">
+</head>
+
+<body>
+    <header class="header">
+        <div id="site-title">
+            <img src="images/bank2.svg" alt="logo">
+            <span id="course-title">Layton Chamber of Commerce</span>
+            <button id="nav-button" class="hamburger" aria-label="navigation"></button>
+        </div>
+        <nav class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div id="joinPage">
+            <h1>Join</h1>
+            <form method="get" action="thankyou.html" class="wf1">
+                <fieldset>
+                    <label for="firstname">First Name<input type="text" id="firstname" title="Your first name"
+                            name="firstname" autocomplete="given-name" required></label>
+                    <label for="lastname">Last Name <input type="text" id="lastname" title="Your last name"
+                            name="lastname" autocomplete="family-name" required></label>
+                    <label for="title">Title <input type="text" id="title" title="Email Address (@ .com)" name="title"
+                            pattern="[A-Za-z\- ]{7,}"></label>
+                    <label for="email">Email <input type="email" id="email" name="email" autocomplete="email"
+                            placeholder="example@gmail.com" required></label>
+                    <label for="phone">Phone <input type="tel" id="phone" title="Phone Number (xxx-xxx-xxxx)"
+                            name="phone" autocomplete="phone" required></label>
+                    <label for="buisnessName">Buisness Name<input type="text" id="buisnessName" title="Buisness Name"
+                            name="buisnessName" autocomplete="organization" required></label>
+
+                    <div>Membership Level</div>
+                    <label for="1"><input type="radio" name="rating" id="1" value="Non-Profit" required>
+                        Non-Profit</label>
+                    <label for="2"><input type="radio" name="rating" id="2" value="Bronze" required> Bronze</label>
+                    <label for="3"><input type="radio" name="rating" id="3" value="Silver" required> Silver</label>
+                    <label for="4"><input type="radio" name="rating" id="4" value="Gold" required> Gold</label>
+
+                    <label for="description">Buisness Description <textarea id="description"
+                            title="Describe Your Buisness" name="description"></textarea></label>
+
+                    <label for="timestamp"><input type="hidden" name="timestamp" id="timestamp"></label>
+
+                    <label for="submit"><input type="submit" id="submit" value="Join"></label>
+                </fieldset>
+            </form>
+
+            <section class="levels">
+                <h2>Membership Levels</h2>
+                <section class="cards" id="np">
+                    <h3>Non-Profit Membership Level</h3>
+                    <button class="button open-buttonN">Sign Up</button>
+                    <dialog id="signupN">
+                        <h3>Non-Profit Membership Level</h3>
+                        <button class="close-buttonN">❌</button>
+                        <ul>
+                            <li>For non profit organizations and there is no fee</li>
+                        </ul>
+                    </dialog>
+                </section>
+                <section class="cards" id="br">
+                    <h3>Bronze Membership Level</h3>
+                    <button class="button open-buttonB">Sign Up</button>
+                    <dialog id="signupB">
+                        <h3>Bronze Membership Level</h3>
+                        <button class="close-buttonB">❌</button>
+                        <ul>
+                            <li>15% discount on events</li>
+                            <li>10% discount on advertising</li>
+                            <li>Fee of $50/month</li>
+                        </ul>
+                    </dialog>
+                </section>
+                <section class="cards" id="sl">
+                    <h3>Silver Membership Level</h3>
+                    <button class="button open-buttonS">Sign Up</button>
+                    <dialog id="signupS">
+                        <h3>Silver Membership Level</h3>
+                        <button class="close-buttonS">❌</button>
+                        <ul>
+                            <li>25% discount on events</li>
+                            <li>15% discount on advertising</li>
+                            <li>Free participation in the trade fair</li>
+                            <li>Fee of $100/month</li>
+                        </ul>
+                    </dialog>
+                </section>
+                <section class="cards" id="gl">
+                    <h3>Gold Membership Level</h3>
+                    <button class="button open-buttonG">Sign Up</button>
+                    <dialog id="signupG">
+                        <h3>Gold Membership Level</h3>
+                        <button class="close-buttonG">❌</button>
+                        <ul>
+                            <li>50% discount on events</li>
+                            <li>50% discount on advertising</li>
+                            <li>Free participation in the trade fair</li>
+                            <li>5 free featured ads per year</li>
+                            <li>1 free training per quarter</li>
+                            <li>Fee of $250/month</li>
+                        </ul>
+                    </dialog>
+                </section>
+            </section>
+        </div>
+
+    </main>
+
+    <footer>
+        <div id="chamInfo">
+            <p>Layton Chamber of Commerce</p>
+            <p>123 Layton Dr</p>
+            <p>Layton, Utah 84041</p>
+            <p>info@laytoncity.com</p>
+            <p>(555) 555-5555</p>
+        </div>
+        <div class="media-links">
+            <a href="https://linkedin.com">
+                <img src="images/linkedin.svg" alt="linkedin">
+            </a>
+            <a href="https://github.com/kylebowser/wdd231">
+                <img src="images/github.svg" alt="github">
+            </a>
+            <a
+                href="https://teams.microsoft.com/l/channel/19%3Ac630949670be41e19bcd41c3ad43602c%40thread.tacv2/WDD%20231%20Team%2005%20-%20Wednesdays%201900%20UTC?groupId=58ad41ee-7ef2-4d94-8cba-eae08a60d12d&tenantId=42804ae1-d2e9-40b7-a4a3-45811234298b">
+                <img src="images/microsoft-teams.svg" alt="microsoft teams">
+            </a>
+        </div>
+        <div id="myInfo">
+            <p>WDD231 Class Project</p>
+            <p>Kyle Bowser</p>
+            <p>&copy; <span id="current-year"></span> Layton Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+
+</html>

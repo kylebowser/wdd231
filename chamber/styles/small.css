@@ -119,10 +119,91 @@ img {
     height: 75px;
 }
 
+fieldset {
+    display: flex;
+    flex-direction: column;
+    border: none;
+}
+
+fieldset label {
+    margin: 5px;
+}
+
 footer {
     background: lightgray;
     color: black;
     text-align: center;
+}
+
+.cards {
+    display: block;
+    text-decoration: none;
+    padding: 1rem;
+    background-color: grey;
+    border: 1px solid black;
+    border-radius: 6px;
+    margin: 10px;
+    text-align: center;
+}
+
+#np {
+    background-color: white;
+    animation: fadeColorN 2s ease-in-out infinite alternate;
+}
+
+@keyframes fadeColorN {
+    from {
+        background-color: white;
+    }
+
+    to {
+        background-color: lightcyan;
+    }
+}
+
+#br {
+    background-color: orange;
+    animation: fadeColorB 2s ease-in-out infinite alternate;
+}
+
+@keyframes fadeColorB {
+    from {
+        background-color: orange;
+    }
+
+    to {
+        background-color: rosybrown;
+    }
+}
+
+#sl {
+    background-color: silver;
+    animation: fadeColorS 2s ease-in-out infinite alternate;
+}
+
+@keyframes fadeColorS {
+    from {
+        background-color: silver;
+    }
+
+    to {
+        background-color: grey;
+    }
+}
+
+#gl {
+    background-color: yellow;
+    animation: fadeColorG 2s ease-in-out infinite alternate;
+}
+
+@keyframes fadeColorG {
+    from {
+        background-color: gold;
+    }
+
+    to {
+        background-color: yellow;
+    }
 }
 
 

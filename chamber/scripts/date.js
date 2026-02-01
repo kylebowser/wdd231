@@ -6,3 +6,5 @@ const today = new Date();
 year.innerHTML = `<span class="highlight">${today.getFullYear()}</span>`;
 
 document.getElementById("lastModified").innerHTML = `Last Modified: <span class="highlight">${document.lastModified}</span>`;
+
+document.getElementById("timestamp").value = new Date().toLocaleString();
