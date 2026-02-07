@@ -129,6 +129,38 @@ fieldset label {
     margin: 5px;
 }
 
+
+.discover section {
+    margin: 1rem 8px;
+    border: 1px solid black;
+    background-color: grey;
+    border-radius: 8px;
+    overflow: hidden;
+
+    display: grid;
+    grid-template-areas:
+        "name"
+        "image"
+        "description"
+        "address";
+}
+
+.discover section h3 {
+    grid-area: name;
+}
+
+.discover section img {
+    grid-area: image;
+}
+
+.discover section p {
+    grid-area: description;
+}
+
+.discover section address {
+    grid-area: address;
+}
+
 footer {
     background: lightgray;
     color: black;
