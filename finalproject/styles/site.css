@@ -148,6 +148,32 @@ img {
     border: 2px solid var(--border-color);
 }
 
+.discover section {
+    margin: 1rem 8px;
+    border: 1px solid black;
+    background-color: grey;
+    border-radius: 8px;
+    overflow: hidden;
+
+    display: grid;
+    grid-template-areas:
+        "name"
+        "image"
+        "hours";
+}
+
+.discover section h3 {
+    grid-area: name;
+}
+
+.discover section img {
+    grid-area: image;
+}
+
+.discover section p {
+    grid-area: hours;
+}
+
 #masks {
     display: none;
 }
@@ -194,151 +220,4 @@ footer {
     text-align: center;
     grid-column: 1 / 4;
     border: 2px solid var(--border-color);
-}
-
-@media only screen and (min-width: 1000px) {
-
-    header {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    .navigation {
-        display: flex;
-    }
-
-    nav ul {
-        justify-content: flex-end;
-        flex-direction: row;
-    }
-
-    .navigation li {
-        display: block;
-
-        flex: 1 1 100%;
-    }
-
-    nav a {
-        flex: 1 1 100%;
-    }
-
-    .navigation a {
-        text-align: center;
-    }
-
-    #menu {
-        display: none;
-    }
-
-    div {
-        position: relative;
-    }
-
-    #heroimg {
-        display: block;
-        width: 100%;
-        height: auto;
-    }
-
-    #pitch1 h2 {
-        background-color: var(--top-color);
-    }
-
-    #pitch1 {
-        position: absolute;
-        top: 20px;
-        left: 20px;
-        background: var(--overlap);
-        padding: 1rem;
-        border: 2px solid var(--border-color);
-    }
-
-    #pitch2 {
-        position: absolute;
-        bottom: 20px;
-        right: 20px;
-        background: var(--overlap);
-        padding: 1rem;
-        border: 2px solid var(--border-color);
-    }
-
-
-    #pitch2 h2 {
-        background-color: var(--bottom-color);
-    }
-
-    #masks {
-        display: block;
-        width: 50%;
-    }
-
-    #bookhead {
-        margin: 1rem auto 0 auto;
-    }
-
-    form {
-        position: absolute;
-        top: 25%;
-        left: 40%;
-        background: var(--overlap);
-        padding: 1rem;
-        border: 2px solid var(--border-color);
-    }
-
-    .wf1 label {
-        display: block;
-        margin: 0 auto 0 auto;
-        padding: 1rem;
-        color: var(--border-color);
-        font-size: .9rem;
-    }
-
-    #fname,
-    #lname {
-        margin-left: 6px;
-    }
-
-    #phone,
-    #email {
-        margin-left: 33px;
-    }
-
-    #submit {
-        display: block;
-        margin: 0 auto 0 auto;
-    }
-
-    .aay {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        align-items: center;
-    }
-
-    .aay h2 {
-        margin: 10px auto 0 auto;
-        font-size: 40px;
-    }
-
-    #a2 {
-        order: 1;
-    }
-
-    #xplore {
-        order: 2;
-    }
-
-    .aay h2 {
-        text-align: center;
-        grid-column: 1 / -1;
-        border-bottom: 1px solid var(--border-color);
-        padding-bottom: 5px;
-    }
-
-    .aay img {
-        width: 400px;
-        height: auto;
-    }
-
-
 }

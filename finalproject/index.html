@@ -4,15 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131 - Dynamic Web Fundamentals - Kyle Bowser - Travel Cancun</title>
-    <meta name="description" content="Kyle Bowser, WDD 131 - Dynamic Web Fundamentals, Travel Cancun">
+    <title>WDD 231 - Web Frontend Development 1 - Kyle Bowser - Travel Cancun</title>
+    <meta name="description" content="Kyle Bowser, WDD 231 - Web Frontend Development 1, Travel Cancun">
     <meta name="author" content="Kyle Bowser">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/site.css">
+    <link rel="stylesheet" href="styles/site-large.css">
     <script src="scripts/site.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <link rel="icon" href="images/flag.ico">
 </head>
 
 <body>
@@ -39,21 +42,16 @@
                 <p>Turquoise waters, powder‑soft white sand, and endless sunshine — that’s Cancun. Nestled on Mexico’s
                     Yucatán Peninsula, Cancun blends vibrant nightlife with serene beaches, making it perfect for both
                     adventure seekers and relaxation lovers.</p>
-                <!-- <p>Population: 888,797</p>
-                <p>Capital: Cancun</p>
-                <p>Currency: Mexican Peso</p>
-                <p>Language: Spanish</p>
-                <p>Time Zone: (CST)</p>
-                <p>Calling Code: +52</p> -->
             </section>
             <section id="pitch2">
                 <h2>Stay to be Breathless</h2>
-                <!-- <img src="images/sunny.svg" alt="Sunny Icon" width="50"> -->
-                <p>Whether you’re chasing sun‑soaked relaxation or unforgettable excursions, Cancun offers the perfect
-                    mix of paradise and culture — a destination where every day feels like a celebration.</p>
-                <!-- <p>Condition: Sunny</p>
-                <p>Wind: 5.2 km/h</p>
-                <p><span id="wind-chill"></span></p> -->
+                <div class="wdata">
+                    <figure>
+                        <img id="weather-icon" src="" alt="">
+                        <figcaption></figcaption>
+                    </figure>
+                    <p id="curtemp"></p>
+                </div>
             </section>
         </div>
     </main>
